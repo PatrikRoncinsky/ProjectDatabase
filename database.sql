@@ -5,7 +5,6 @@ use parking;
 CREATE TABLE Car( 
     id INT PRIMARY KEY AUTO_INCREMENT,
 	SPZ VARCHAR,
-	ZNACKA VARCHAR,
 );
 
 
