@@ -9,8 +9,9 @@ public class Reservation {
     @JsonProperty("street")
     public String street;
 
-    @JsonProperty("date")
-    public String date;
+    @JsonProperty("reservation_date")
+    public String reservation_date;
+
 
     public String getLicence() {
         return licence;
@@ -21,7 +22,9 @@ public class Reservation {
     }
 
     public String getDate() {
-        return date;
+        return reservation_date;
     }
+
+
 
 }

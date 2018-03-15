@@ -4,8 +4,9 @@ import io.dropwizard.Application;
 import javax.servlet.DispatcherType;
 import javax.servlet.FilterRegistration;
 import java.util.EnumSet;
+
+import io.dropwizard.archetypes.resources.Post;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
-import io.dropwizard.archetypes.resources.Insert;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
@@ -30,8 +31,7 @@ public class serverApplication extends Application<serverConfiguration> {
     public void run(final serverConfiguration configuration,
                     final Environment environment) {
         environment.jersey().register(
-                new Insert()
-        );
+                new Post());
 
 
 
